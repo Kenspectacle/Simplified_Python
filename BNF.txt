@@ -1,0 +1,6 @@
+id := [a-zA-Z][0-9a-zA-Z]+ // basically any variable name
+n := -?[0=9]+ // any integer, including negatives
+statement := id = expr | print(id) | statement ; statement
+expr := id | n | expr + expr
+
+program := statement
